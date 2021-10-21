@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/* tudo que acabar com "@" é regra/*
+/* " * " por sempre congiguração global*/
+
+*{
+    /*height:100%;*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    text-align: justify; /* deixa o paragrafos alinhados*/
+}
+body{
+    background-image: linear-gradient(to top, #19A1BD, #1A97B0);
+}
+main{
+    background-color:white;
+    width:650px;
+    padding: 15px; /* da uma preenchimento no fundo*/
+    margin: auto; /*centralizar*/
+    border-radius: 15px;/* borda dos cantos da página*/
+    box-shadow: 5px 5px 15px #0a3741b6; /*sombra de caixa */
+}
+h1{
+    text-align: center; /* centralizar a palavra*/
+    text-shadow: 1px 1px 2px #0f6d80c7;
+    color:#19A1BD;
+}
+h2{
+    color:#072C33;
+}
+#principal{ /* Em HTML é Id / em CSS é ' # ' ( Só pode um)
+                 Em HTML é Class /  em CSS é ' . ' <- ponto- (pode vários)
+                 ' : ' representa Pseudo-classes
+                 ' > ' isso símboliza filho de uma tga/exemplo 'div'
+                 Pseudo-classes -- define estadus de elementos dentro da HTML*/
+
+                 /*Pseudo-elemento " :: " quando usar after' sig -> 'depois'
+                 //SELETORES PERSONALIZADOS
+                 # = id
+                 . = class
+                 : = Pseudo-classes
+                 :: = Pseudo-element
+                  > = clildren/filho*/
+    text-align: center;
+    background-color: black;
+    color: white;
+
+}
+button:hover{
+    background-color: blue;
+}
+button{
+    background-color:rgba(47, 140, 163, 0.733);
+    color: black;
+    border-radius: 7px;
+    padding: 2px;
+
+}
+.basico{
+    color:blue;
+}
+.intermediarios{
+    color:rgb(255, 1, 1);
+}
+.avancado{
+    color:seagreen;
+}
+div{
+    background-color:#7c8792;
+    text-align: center;
+    height:200px; /*altura*/
+    width:200px; /*largura*/
+    border: 1px solid black;
+    display: inline-block;
+}
+div:hover{
+    background-color: blue;
+}

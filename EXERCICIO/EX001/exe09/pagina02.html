@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda págin</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2? family = Kaushan + Script & display = swap');
+
+            /*font-family: sans-serif;
+            font-size: 1em ;
+            font-style: italic;
+            font-weight: bolder; *//* Shorthand
+
+            font-style -> font-weight -> font-size -> fonte-family
+             colocando tudo numa única linha/tag*/
+
+         /*  font: normal 16px Arial, verdana, serif;*/
+        p{
+            text-indent: 30px; /* da uma recuada no ínicio, igual na redação*/
+        }
+        #princi{
+            text-align: center;
+        }
+        h2{
+            text-align: right;
+        }
+        /* h1, h2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            text-decoration: underline;*/ /*sublinhado*/
+            /*Medidas absolutas
+            "cm" (centimentro) "mm" (mílimetro ) "im" (pólegada) "px" (pixel) "pt" (ponto) "pq" (paica)
+
+              medidas Relativas
+              em, ex, rem, vw, vh % 
+              
+              PX e EM as duas oficias
+              16px é 1em*/
+             /* font-weight: ; peso da fonte
+             
+             weight(peso), rieght(altura), width(largura
+             
+             valores aceitos por algumas fontes
+             (lighter, normal, bold, bolder*/
+        body{
+            font-family: Arial, Helvetica, sans-serif; 
+        }
+            
+        a{
+            color:black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color:darkred; /* a:visited -> Pseudo-classes, mostra quando o site foi visitado*/
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{
+            color:blue; /*a:active -> ao clicar ele mudar de cor*/
+        }
+        a::after{/* after -> antes direita*/
+            content: ' [←]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+        a::before{ /*before -> depois esquerda*/
+            content: '[→] ';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+        h1{
+            background-color: lightgray;
+            height:300px;
+            width: 300px;
+        }
+       
+    </style>
+</head>
+<body>
+  <h1 id="princi">Personalizando Links</h1>
+  <ul type="square">
+      <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHubv</a></li>
+      <li><a href="https://youtube.com/cursoemvideo/" target="_blank">Canal do YOUTUBE</a></li>
+      <li><a href="https://www.cursoemvideo.com" target="_blank">Site do Cursoemvídeo</a></li>
+  </ul>
+    <p><a href="cor.html">Voltar</a></p>
+
+    <h1>Exemplos de caixa Box-level</h1>
+    <p>Parágrafos também são box-level</p>    
+</body>
+</html>
